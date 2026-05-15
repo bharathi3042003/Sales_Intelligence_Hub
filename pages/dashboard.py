@@ -35,4 +35,10 @@ select status, count(*) from customer_sales
     col1 = st.columns(1)
 
     st.write("open sales ", data_open)
+
+    cur.execute ('''
+    SELECT * FROM customer_sales WHERE pending_amount > 5000;
+''')
+    sales_5000= cur.fetchone()
+    st.write("sales that has pending_amount>5000 ", sales_5000)
     conn.close()

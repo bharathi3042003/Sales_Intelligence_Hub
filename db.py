@@ -2,9 +2,9 @@ import psycopg2
 
 def get_connection():
     return psycopg2.connect(
-        host="dpg-d7d4vvq8qa3s73b10540-a.singapore-postgres.render.com",
-        database="salemanagementdb_flpa",
+        host="dpg-d83fol67r5hc73boh4hg-a.singapore-postgres.render.com",
+        database="salemanagementdb_hcwt",
         user="jayabharathi",
-        password="GRGzARJJc8kpCYs3RdAeMrMZdOSTCiJ2",
+        password="8HrtDMdBhMBiqmwo7wpWiQbjSmvokIO5",
         port="5432"
     )
